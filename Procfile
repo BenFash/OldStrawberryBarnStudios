@@ -1,1 +1,1 @@
-gunicorn strawberry_barn.wsgi
+web: gunicorn strawberry_barn.wsgi
