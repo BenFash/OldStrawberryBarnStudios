@@ -1,0 +1,1 @@
+gunicorn strawberry_barn.wsgi
