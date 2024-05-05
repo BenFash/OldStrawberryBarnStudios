@@ -35,13 +35,13 @@ if DEBUG:
     # Development settings 
     True
 
-
 else:
     # Production settings 
     False
 
 ALLOWED_HOSTS = [
     '.herokuapp.com',
+    'localhost',
 ]
 
 
