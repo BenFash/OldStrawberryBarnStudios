@@ -67,3 +67,27 @@ img.logo {
 .site-name {
     margin-left: 10px;
 }
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--navfooter);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+    font-family: var(--site-name);
+}
+
+.dog-logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}

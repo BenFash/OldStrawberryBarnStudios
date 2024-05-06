@@ -83,8 +83,26 @@
         Hello, world!
     </main>
 
-    <footer>
-
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm m-4">
+                    <a href="www.linkedin.com/in/ben-fashan">Created by Ben Fashan</a>
+                </div>
+                <div class="col-sm text-center">
+                    <img class="dog-logo" src="/static/images/dog.png" alt="Dog Friendly Image: paw print with text">
+                </div>
+                <div class="col-sm text-end m-2">
+                    <a href="#" class="footer-links">Privacy Notice</a>
+                    <p>
+                        {% block copyright %}
+                        The Old Strawberry Barn Studios &copy;
+                        {% endblock copyright %}
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
