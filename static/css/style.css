@@ -49,6 +49,11 @@ main {
 }
 
 /* Header  */
+
+header {
+    font-family: var(--site-name);
+}
+
 .navbar {
     background-color: var(--navfooter);
     box-shadow: var(--box-shadow);
