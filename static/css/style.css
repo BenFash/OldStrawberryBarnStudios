@@ -8,8 +8,9 @@
 
     /* colors */
     --navfooter: #212529;
-    --container-blue: #0066B9;
-    --container-red: #D72638;
+    --bgcolor1: #879A77;
+    --bgcolor2: #823200;
+    --bgcolor3: #827191;
 
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
