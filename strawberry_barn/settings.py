@@ -99,8 +99,7 @@ WSGI_APPLICATION = 'strawberry_barn.wsgi.application'
 #     }
 # }
 DATABASES = {
-'default':
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
