@@ -43,6 +43,7 @@ h6 {
 main {
     flex: 1 0 auto;
     background-color: var(--bgcolor1);
+    font-size: large;
 }
 
 .active {
