@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator
+from phonenumber_field.modelfields import PhoneNumberField
 
 class Room(models.Model):
     room_name = models.CharField(max_length=100, verbose_name="Room Name")
@@ -16,7 +17,7 @@ class Reservation(models.Model):
     check_out = models.DateField(verbose_name="Check-out Date")
     guest_name = models.CharField(max_length=100, verbose_name="Guest Name")
     guest_email = models.EmailField(verbose_name="Guest Email")
-    guest_phone = models.PhoneNumberField(blank=True, null=True, verbose_name="Guest Phone")
+    guest_phone = PhoneNumberField(blank=True, null=True, verbose_name="Guest Phone")
     num_guests = models.IntegerField(default=1, validators=[MaxValueValidator(2)], verbose_name="Number of Guests")
     dog = models.IntegerField(default=0, validators=[MaxValueValidator(1)], verbose_name="Number of Dogs")
     vehicle = models.BooleanField(default=False, verbose_name="Vehicle")
