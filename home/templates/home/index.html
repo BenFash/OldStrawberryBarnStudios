@@ -4,5 +4,41 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-
+<div id="homecarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/exterior/home1.jpeg" class="homeimg" alt="First shot of studios exterior">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/exterior/home2.jpeg" class="homeimg" alt="Second shot of studios exterior">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/exterior/home3.jpeg" class="homeimg" alt="Third shot of studios exterior">
+        </div>
+    </div>
+</div>
+<div id="homeintro" class="container text-center mt-3">
+    <h1>Welcome to The Old Strawberry Barn Studios</h1>
+    <p>
+        Discover a charming retreat at The Old Strawberry Barn Studios, where history meets modern comfort.
+        Nestled on the outskirts of the picturesque Somerset town of Cheddar,
+        our collection of four fully refurbished studio apartments,
+        alongside the owner’s cottage dating back to 1708, offers a tranquil escape just a stone's throw
+        from the world-famous Gorge.
+    </p>
+    <p>
+        Immerse yourself in the timeless beauty of our surroundings, where rolling countryside meets quaint
+        village life. With an abundance of local pubs, eateries, and attractions within walking distance,
+        you'll find the perfect balance of rural serenity and convenience.
+        <br>
+    </p>
+</div>
 {% endblock %}

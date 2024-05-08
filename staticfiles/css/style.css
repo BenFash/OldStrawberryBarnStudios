@@ -8,8 +8,9 @@
 
     /* colors */
     --navfooter: #212529;
-    --container-blue: #0066B9;
-    --container-red: #D72638;
+    --bgcolor1: #879A77;
+    --bgcolor2: #823200;
+    --bgcolor3: #827191;
 
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -36,10 +37,12 @@ h4,
 h5,
 h6 {
     font-family: var(--title);
+    font-weight: 700;
 }
 
 main {
     flex: 1 0 auto;
+    background-color: var(--bgcolor1);
 }
 
 .active {
@@ -65,8 +68,8 @@ a.nav-link {
 }
 
 img.logo {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .site-name {
@@ -87,12 +90,37 @@ footer {
 }
 
 .dog-logo {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
+}
+
+.footer-links:hover {
+    color: #c6c6c6;
+}
+
+/* home.html */
+.homeimg {
+    height: 80vh;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+    img.logo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .site-name {
+        font-size: 13px;
+    }
+
+    .footer-links {
+        font-size: 13px;
+    }
 }

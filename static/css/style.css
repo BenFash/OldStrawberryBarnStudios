@@ -37,10 +37,12 @@ h4,
 h5,
 h6 {
     font-family: var(--title);
+    font-weight: 700;
 }
 
 main {
     flex: 1 0 auto;
+    background-color: var(--bgcolor1);
 }
 
 .active {
@@ -97,14 +99,16 @@ footer a {
     text-decoration: none;
 }
 
-.footer-links {
-    transition: all 0.3s ease;
-}
-
 .footer-links:hover {
     color: #c6c6c6;
-    transform: scale(1.1);
 }
+
+/* home.html */
+.homeimg {
+    height: 80vh;
+    width: 100%;
+}
+
 
 @media screen and (max-width: 767px) {
     img.logo {
@@ -113,7 +117,10 @@ footer a {
     }
 
     .site-name {
-        font-size: 14px;
+        font-size: 13px;
     }
 
+    .footer-links {
+        font-size: 13px;
+    }
 }

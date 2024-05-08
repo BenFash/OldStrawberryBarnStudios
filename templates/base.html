@@ -35,7 +35,7 @@
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="/static/images/site-logo.png" alt="Site logo" class="logo">
+                    <img src="/static/images/site-logo.jpg" alt="Site logo" class="logo">
                     <span class="site-name">The Old Strawberry Barn Studios</span>
                 </a>
                 <!-- Navbar Toggler -->
@@ -80,7 +80,8 @@
     </header>
 
     <main>
-        Hello, world!
+        {% block content %}
+        {% endblock %}
     </main>
 
     <!-- Footer -->
@@ -99,7 +100,7 @@
                 </div>
                 <div class="col-sm">
                     <p class="m-0 text-center text-nowrap">
-                        <img class="dog-logo" src="/static/images/dog.png"
+                        <img class="dog-logo" src="/static/images/dog.jpg"
                             alt="Dog Friendly Image: paw print with text">
                     </p>
                 </div>
