@@ -10,6 +10,13 @@ class Room(models.Model):
 
     def __str__(self):
         return self.room_name
+
+class RoomImage(models.Model):
+    room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='images')
+    images = models.ImageField(upload_to='room_pictures', verbose_name="Room Pictures")
+
+    def __str__(self):
+        return self.room.room_name                             
     
 class Reservation(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE, verbose_name="Reserved Room")

@@ -43,6 +43,7 @@ h6 {
 main {
     flex: 1 0 auto;
     background-color: var(--bgcolor1);
+    font-size: large;
 }
 
 .active {
@@ -104,11 +105,19 @@ footer a {
 }
 
 /* home.html */
-.homeimg {
-    height: 80vh;
-    width: 100%;
+#homecarousel {
+    height: 90vh;
 }
 
+.homeimg {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+#introarea {
+    border-top: var(--border);
+}
 
 @media screen and (max-width: 767px) {
     img.logo {
@@ -123,4 +132,9 @@ footer a {
     .footer-links {
         font-size: 13px;
     }
+
+    /* .homeimg {
+        height: 80vh;
+        width: 100%;
+    } */
 }
