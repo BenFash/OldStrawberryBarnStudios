@@ -4,7 +4,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 class Room(models.Model):
     room_name = models.CharField(max_length=100, verbose_name="Room Name")
-    room_pictures = models.ImageField(upload_to='room_pictures', verbose_name="Room Pictures")
+    room_pictures = models.ImageField(upload_to='static/images/room_pictures', verbose_name="Room Pictures")
     card_description = models.CharField(max_length=255, verbose_name="Card Description")
     room_description = models.TextField(verbose_name="Room Description")
 
@@ -13,7 +13,7 @@ class Room(models.Model):
 
 class RoomImage(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='images')
-    images = models.ImageField(upload_to='room_pictures', verbose_name="Room Pictures")
+    images = models.ImageField(upload_to='static/images/room_pictures', verbose_name="Room Pictures")
 
     def __str__(self):
         return self.room.room_name                             
