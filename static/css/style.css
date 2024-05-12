@@ -11,7 +11,7 @@
     --bgcolor1: #879A77;
     --bgcolor2: #823200;
     --bgcolor3: #827191;
-    --buttons: #D72638;
+    --buttons: #f8f9fa;
 
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -122,13 +122,11 @@ footer a {
 
 /* rooms.html */
 .btn-rooms {
-    color: white;
     background-color: var(--buttons);
 }
 
 .btn-rooms:hover {
-    color: white;
-    background-color: #9D1E2B;
+    background-color: #e8e9eb;
 }
 
 @media screen and (max-width: 767px) {
