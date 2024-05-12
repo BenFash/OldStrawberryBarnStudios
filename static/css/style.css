@@ -11,6 +11,7 @@
     --bgcolor1: #879A77;
     --bgcolor2: #823200;
     --bgcolor3: #827191;
+    --buttons: #D72638;
 
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -119,6 +120,17 @@ footer a {
     border-top: var(--border);
 }
 
+/* rooms.html */
+.btn-rooms {
+    color: white;
+    background-color: var(--buttons);
+}
+
+.btn-rooms:hover {
+    color: white;
+    background-color: #9D1E2B;
+}
+
 @media screen and (max-width: 767px) {
     img.logo {
         width: 2rem;
@@ -131,6 +143,10 @@ footer a {
 
     .footer-links {
         font-size: 13px;
+    }
+
+    .btn-rooms {
+        margin: 10px 0;
     }
 
     /* .homeimg {
