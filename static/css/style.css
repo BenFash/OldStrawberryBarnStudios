@@ -137,6 +137,13 @@ footer a {
     background-color: var(--bgcolor3);
 }
 
+.dog-card {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 6rem;
+}
+
 @media screen and (max-width: 767px) {
     img.logo {
         width: 2rem;
