@@ -6,7 +6,7 @@
 {% block content %}
 <h1 class="text-center mt-4 text-decoration-underline">Rooms</h1>
 <!-- buttons area -->
-<div class="row justify-content-between text-center m-4">
+<div class="row justify-content-between text-center mt-4">
     <div class="col-12 col-md-4">
         <a class="btn btn-rooms" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
             aria-expanded="false" aria-controls="multiCollapseExample1">Room Amenities</a>
@@ -20,7 +20,7 @@
             aria-expanded="false" aria-controls="multiCollapseExample3">House Rules</button>
     </div>
 </div>
-<div id="roomcollapsearea" class="row p-2">
+<div id="roomcollapsearea" class="row">
     <!-- First collapse component -->
     <div class="col-lg-4 col-md-6 mb-2">
         <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -53,11 +53,11 @@
 <!-- end buttons area -->
 
 <!-- rooms area -->
-<div class="container d-flex flex-row flex-wrap justify-content-center gap-5 my-3">
+<div class="container-fluid d-flex flex-row flex-wrap justify-content-center gap-5 my-3">
     {% for r in rooms %}
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 40rem;">
         <!-- Changed the src attribute to access the room picture URL -->
-        <img src="{{ r.room_pictures.url }}" class="img-fluid " alt="{{ r.room_name }}">
+        <img src="{{ r.room_pictures.url }}" class="img-fluid room-img" alt="{{ r.room_name }}">
         <div class="card-body">
             <h2 class="card-title">{{ r.room_name }}</h2>
             <p class="card-text">{{ r.card_description }}</p>
