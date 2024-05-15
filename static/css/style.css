@@ -156,6 +156,7 @@ footer a {
 /* roomdetail.html */
 #roomdetailcarousel {
     height: 50vh;
+    width: 50vw;
 }
 
 .roomdetailimg {
