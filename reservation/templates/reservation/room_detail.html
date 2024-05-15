@@ -3,19 +3,19 @@
 
 {% block title %}Room Detail - {{ room.room_name }}{% endblock %}
 {% block content %}
-<div class="row">
-    <div class="col-12 col-md-6">
+<div class="row my-5">
+    <div class="col-12 col-md-6 d-flex align-items-center">
         <div id="roomdetailcarousel" class="carousel slide">
             <div class="carousel-indicators">
-                {% for image in room.images.all %}
+                {% for image in room_images %}
                 <button type="button" data-bs-target="#roomdetailcarousel" data-bs-slide-to="{{ forloop.counter0 }}"
                     {% if forloop.first %}class="active" {% endif %}></button>
                 {% endfor %}
             </div>
             <div class="carousel-inner">
-                {% for image in room.images.all %}
+                {% for image in room_images %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <img src="{{ image.images.url }}" class="d-block w-100" alt="{{ room.room_name }}">
+                    <img src="{{ image.images.url }}" class="roomdetailimg d-block" alt="Room Image">
                 </div>
                 {% endfor %}
             </div>
@@ -31,5 +31,18 @@
             </button>
         </div>
     </div>
+    <div class="col-12 col-md-6 d-flex align-items-center">
+        <div class="card" style="width: 30rem; margin-top: auto; margin-bottom: auto;">
+            <div class="card-body">
+                <h1 class="text-decoration-underline">{{ room.room_name }}</h1>
+                <p class="card-text my-4">{{ room.room_description }}</p>
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-rooms">Check Availability</a>
+                    <a href="#" class="btn btn-rooms">View All Rooms</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 {% endblock %}
