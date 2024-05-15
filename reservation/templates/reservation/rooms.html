@@ -34,7 +34,7 @@
                 <div class="card card-body mb-1">
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <i class="fa-solid fa-bowl-food"></i><span class="p-1 font-weight-bold">Kitchenette</span>
+                            <i class="fa-solid fa-bowl-food"></i><span class="p-1">Kitchenette</span>
                             <ul>
                                 <li>Full size induction hob</li>
                                 <li>Electric oven</li>
@@ -125,7 +125,7 @@
         <div class="card-body">
             <h2 class="card-title">{{ r.room_name }}</h2>
             <p class="card-text">{{ r.card_description }}</p>
-            <a href="#" class="btn btn-rooms">View Room</a>
+            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms">View Room</a>
             {% if r.room_name == 'Orchard View' or r.room_name == 'Meadow View' %}
             <span><img src="/static/images/dog.jpg" alt="dog friendly logo" class="dog-card"></span>
             {% endif %}

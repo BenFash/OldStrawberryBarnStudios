@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Room Detail - {{ room.room_name }}{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div id="roomdetailcarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                {% for image in room.images.all %}
+                <button type="button" data-bs-target="#roomdetailcarousel" data-bs-slide-to="{{ forloop.counter0 }}"
+                    {% if forloop.first %}class="active" {% endif %}></button>
+                {% endfor %}
+            </div>
+            <div class="carousel-inner">
+                {% for image in room.images.all %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ image.images.url }}" class="d-block w-100" alt="{{ room.room_name }}">
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#roomdetailcarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#roomdetailcarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
