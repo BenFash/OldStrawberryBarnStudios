@@ -133,7 +133,10 @@ footer a {
     background-color: var(--buttons);
 }
 
-.btn-rooms:hover {
+.btn-rooms:hover,
+.btn-rooms:active,
+.btn-rooms:focus {
+    color: black;
     background-color: var(--bgcolor3);
 }
 

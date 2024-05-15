@@ -6,56 +6,61 @@
 {% block content %}
 <h1 class="text-center mt-4 text-decoration-underline">Rooms</h1>
 <!-- buttons area -->
-<div class="row justify-content-between text-center mt-4">
-    <div class="col-12 col-md-4">
-        <a class="btn btn-rooms w-50" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-            aria-expanded="false" aria-controls="multiCollapseExample1">Room Amenities</a>
-    </div>
-    <div class="col-12 col-md-4">
-        <button class="btn btn-rooms w-50" type="button" data-bs-toggle="collapse"
-            data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Studios
-            Features</button>
-    </div>
-    <div class="col-12 col-md-4">
-        <button class="btn btn-rooms w-50" type="button" data-bs-toggle="collapse"
-            data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">House
-            Rules</button>
-    </div>
-</div>
-<div id="roomcollapsearea" class="row m-2">
-    <!-- First collapse component -->
-    <div class="col-lg-4 col-md-6 ">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body mb-1">
-                Some placeholder content for the first collapse component of this multi-collapse example. This panel
-                is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
+<div id="buttonsarea">
+    <div class="row justify-content-between text-center mt-5">
+        <div class="col-12 col-md-4">
+            <a class="btn btn-rooms w-50" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">Room
+                Amenities</a>
+        </div>
+        <div class="col-12 col-md-4">
+            <button class="btn btn-rooms w-50" type="button" data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                aria-controls="multiCollapseExample2">Studios
+                Features</button>
+        </div>
+        <div class="col-12 col-md-4">
+            <button class="btn btn-rooms w-50" type="button" data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                aria-controls="multiCollapseExample3">House
+                Rules</button>
         </div>
     </div>
-    <!-- Second collapse component -->
-    <div class="col-lg-4 col-md-6 mb-1">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-                Some placeholder content for the second collapse component of this multi-collapse example. This
-                panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-        </div>
-    </div>
-    <!-- Third collapse component -->
-    <div class="col-lg-4 col-md-6 mb-1">
-        <div class="collapse multi-collapse" id="multiCollapseExample3">
-            <div class="card card-body">
-                Some placeholder content for the 3rd collapse component of this multi-collapse example. This
-                panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-        </div>
-    </div>
-</div>
 
+    <div id="roomcollapsearea" class="row m-2">
+        <!-- First collapse component -->
+        <div class="col-lg-4 col-md-6 ">
+            <div class="collapse multi-collapse" id="multiCollapseExample1" data-bs-parent="#buttonsarea">
+                <div class="card card-body mb-1">
+                    Some placeholder content for the first collapse component of this multi-collapse example. This panel
+                    is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <!-- Second collapse component -->
+        <div class="col-lg-4 col-md-6 mb-1">
+            <div class="collapse multi-collapse" id="multiCollapseExample2" data-bs-parent="#buttonsarea">
+                <div class="card card-body">
+                    Some placeholder content for the second collapse component of this multi-collapse example. This
+                    panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <!-- Third collapse component -->
+        <div class="col-lg-4 col-md-6 mb-1">
+            <div class="collapse multi-collapse" id="multiCollapseExample3" data-bs-parent="#buttonsarea">
+                <div class="card card-body">
+                    Some placeholder content for the 3rd collapse component of this multi-collapse example. This
+                    panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- end buttons area -->
 
 <!-- rooms area -->
-<div class="container-fluid d-flex flex-row flex-wrap justify-content-center gap-5 my-3 mb-5">
+<div class="container-fluid d-flex flex-row flex-wrap justify-content-center gap-5 mt-4 mb-5">
     {% for r in rooms %}
     <div class="card" style="width: 20rem;">
         <!-- Changed the src attribute to access the room picture URL -->
