@@ -4,8 +4,9 @@
 {% block title %}Room Detail - {{ room.room_name }}{% endblock %}
 {% block content %}
 <div class="row my-5">
-    <div class="col-12 col-md-6 d-flex align-items-center">
-        <div id="roomdetailcarousel" class="carousel slide">
+    <!-- carousel -->
+    <div class="col-12 col-md-6 d-flex border">
+        <div id="roomdetailcarousel" class="carousel slide mx-auto">
             <div class="carousel-indicators">
                 {% for image in room_images %}
                 <button type="button" data-bs-target="#roomdetailcarousel" data-bs-slide-to="{{ forloop.counter0 }}"
@@ -31,11 +32,13 @@
             </button>
         </div>
     </div>
-    <div class="col-12 col-md-6 d-flex align-items-center">
-        <div class="card" style="width: 30rem; margin-top: auto; margin-bottom: auto;">
+    <!-- card -->
+    <div class="col-12 col-md-6 d-flex align-items-center border">
+        <div class="card" style="width: 30rem">
             <div class="card-body">
-                <h1 class="text-decoration-underline">{{ room.room_name }}</h1>
-                <p class="card-text my-4">{{ room.room_description }}</p>
+                <h1>{{ room.room_name }}</h1>
+                <hr>
+                <p class="card-text my-4">{{ room.room_description|linebreaks }}</p>
                 <div class="d-flex justify-content-between">
                     <a href="#" class="btn btn-rooms">Check Availability</a>
                     <a href="#" class="btn btn-rooms">View All Rooms</a>

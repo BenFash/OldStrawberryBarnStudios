@@ -155,15 +155,16 @@ footer a {
 
 /* roomdetail.html */
 #roomdetailcarousel {
-    height: 39.375rem;
-    width: 75rem;
+    height: 80vh;
+    width: 100rem;
 }
 
 .roomdetailimg {
-    height: 50vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
 }
+
 
 @media screen and (max-width: 767px) {
     img.logo {
