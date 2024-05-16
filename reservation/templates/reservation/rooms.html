@@ -125,7 +125,7 @@
         <div class="card-body">
             <h2 class="card-title">{{ r.room_name }}</h2>
             <p class="card-text">{{ r.card_description }}</p>
-            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms">View Room</a>
+            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-3">View Room</a>
             {% if r.room_name == 'Orchard View' or r.room_name == 'Meadow View' %}
             <span><img src="/static/images/dog.jpg" alt="dog friendly logo" class="dog-card"></span>
             {% endif %}
