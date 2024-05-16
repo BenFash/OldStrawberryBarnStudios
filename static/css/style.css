@@ -156,13 +156,24 @@ footer a {
 /* roomdetail.html */
 #roomdetailcarousel {
     height: 80vh;
-    width: 100rem;
+    width: 95%;
 }
 
 .roomdetailimg {
     height: 80vh;
     width: 100%;
     object-fit: cover;
+    border: var(--border);
+}
+
+#detailscard {
+    font-size: x-large;
+}
+
+.btn-details {
+    font-size: x-large;
+    color: white;
+    background-color: var(--buttons);
 }
 
 
@@ -182,6 +193,26 @@ footer a {
 
     .btn-rooms {
         margin: 10px 0;
+    }
+
+    #roomdetailcarousel {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .roomdetailimg {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+        border: none;
+    }
+
+    #detailscard {
+        font-size: large;
+    }
+
+    .btn-details {
+        font-size: large;
     }
 
     /* .homeimg {

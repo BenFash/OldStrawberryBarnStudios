@@ -5,7 +5,7 @@
 {% block content %}
 <div class="row my-5">
     <!-- carousel -->
-    <div class="col-12 col-md-6 d-flex border">
+    <div class="col-12 col-lg-6">
         <div id="roomdetailcarousel" class="carousel slide mx-auto">
             <div class="carousel-indicators">
                 {% for image in room_images %}
@@ -33,15 +33,15 @@
         </div>
     </div>
     <!-- card -->
-    <div class="col-12 col-md-6 d-flex align-items-center border">
-        <div class="card" style="width: 30rem">
+    <div class="col-12 col-lg-6 d-flex align-items-center">
+        <div id="detailscard" class="card" style="width: 40rem">
             <div class="card-body">
                 <h1>{{ room.room_name }}</h1>
                 <hr>
                 <p class="card-text my-4">{{ room.room_description|linebreaks }}</p>
                 <div class="d-flex justify-content-between">
-                    <a href="#" class="btn btn-rooms">Check Availability</a>
-                    <a href="#" class="btn btn-rooms">View All Rooms</a>
+                    <a href="#" class="btn btn-details p-4">Check Availability</a>
+                    <a href="#" class="btn btn-details p-4">View All Rooms</a>
                 </div>
             </div>
         </div>
