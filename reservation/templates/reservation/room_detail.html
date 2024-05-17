@@ -3,7 +3,7 @@
 
 {% block title %}Room Detail - {{ room.room_name }}{% endblock %}
 {% block content %}
-<div class="row mt-0 mt-lg-5">
+<div class="row mt-0 my-lg-5">
     <!-- carousel -->
     <div class="col-12 col-lg-6">
         <div id="roomdetailcarousel" class="carousel slide mx-auto">
@@ -49,7 +49,7 @@
                 <hr>
                 <p class="card-text my-4">{{ room.room_description|linebreaks }}</p>
                 <div class="d-flex justify-content-between mt-4">
-                    <a href="{% url 'reservation' %}" class="btn btn-details py-3">Check Availability</a>
+                    <a href="{% url 'reservation' pk=room.pk %}" class="btn btn-details py-3">Check Availability</a>
                     <a href="{% url 'rooms' %}" class="btn btn-details py-3">View All Rooms</a>
                 </div>
             </div>

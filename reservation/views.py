@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.core.exceptions import ObjectDoesNotExist
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Room, RoomImage, Reservation
@@ -36,16 +36,17 @@ def RoomDetailView(request, pk):
     return render(request, 'reservation/room_detail.html', context)
 
 
-def ReservationView(request):
+def ReservationView(request, pk):
     """
     View for making a reservation
-    """ 
-    # room = get_object_or_404(Room, pk=request.POST.get('room_pk'))
+    """
+    room = get_object_or_404(Room, pk=pk)
+
     if request.method == 'POST':
         form = ReservationForm(request.POST)
         if form.is_valid():
             reservation = form.save(commit=False)
-            reservation.room = room.room_name
+            reservation.room = room
             reservation.save()
 
             # Email details
@@ -75,6 +76,6 @@ def ReservationView(request):
             # Redirect to the room details page using pk
             return redirect('room_detail', pk=room.pk)
     else:
-        form = ReservationForm()
+        form = ReservationForm(initial={'room': room})
 
-    return render(request, 'reservation/reservation_form.html', {'form': form})
+    return render(request, 'reservation/reservation_form.html', {'form': form, 'room': room})

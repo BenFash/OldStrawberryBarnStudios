@@ -26,7 +26,7 @@ class Reservation(models.Model):
     guest_email = models.EmailField(verbose_name="Guest Email")
     guest_phone = PhoneNumberField(blank=True, null=True, verbose_name="Guest Phone")
     num_guests = models.IntegerField(default=1, validators=[MaxValueValidator(2)], verbose_name="Number of Guests")
-    dog = models.IntegerField(default=0, validators=[MaxValueValidator(1)], verbose_name="Number of Dogs")
+    dog = models.BooleanField(default=False, blank=True, null=True, verbose_name="Dog")
     vehicle = models.BooleanField(default=False, verbose_name="Vehicle")
     guest_info = models.TextField(blank=True, null=True, verbose_name="Additional Information")
     reservation_date = models.DateTimeField(auto_now_add=True, verbose_name="Reservation Date")    
