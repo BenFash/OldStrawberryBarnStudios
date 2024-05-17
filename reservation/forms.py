@@ -11,6 +11,7 @@ class ReservationForm(forms.ModelForm):
             'check_out': forms.DateInput(attrs={'type': 'date'}),
             'dog': forms.CheckboxInput(),
             'vehicle': forms.CheckboxInput(), 
+            'num_guests': forms.NumberInput(attrs={'min': 1, 'max': 2}),  
         }
 
     def clean_num_guests(self):
