@@ -42,6 +42,8 @@ def ReservationView(request, pk):
     """
     room = get_object_or_404(Room, pk=pk)
 
+    show_dog_field = room.room_name in ['Orchard View', 'Meadow View']
+
     if request.method == 'POST':
         form = ReservationForm(request.POST)
         if form.is_valid():
@@ -78,4 +80,4 @@ def ReservationView(request, pk):
     else:
         form = ReservationForm(initial={'room': room})
 
-    return render(request, 'reservation/reservation_form.html', {'form': form, 'room': room})
+    return render(request, 'reservation/reservation_form.html', {'form': form, 'room': room, 'show_dog_field': show_dog_field})

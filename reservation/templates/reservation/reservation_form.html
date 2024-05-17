@@ -9,9 +9,22 @@
         <h1 class="text-center">Make a Reservation for {{ room.room_name }}</h1>
         {% csrf_token %}
         {{ form.media }}
-        {{ form|crispy }}
+        {{ form.guest_name|as_crispy_field }}
+        {{ form.guest_email|as_crispy_field }}
+        {{ form.guest_phone|as_crispy_field }}
+        {{ form.check_in|as_crispy_field }}
+        {{ form.check_out|as_crispy_field }}
+        {{ form.num_guests|as_crispy_field }}
+
+        {% if show_dog_field %}
+        {{ form.dog|as_crispy_field }}
+        {% endif %}
+
+        {{ form.vehicle|as_crispy_field }}
+        {{ form.guest_info|as_crispy_field }}
+
         <div class="text-center">
-            <button type="submit" class="btn btn-primary mt-2" value="Save">Submit</button>
+            <button type="submit" class="btn btn-rooms mt-2" value="Save">Submit</button>
         </div>
     </form>
 </div>
