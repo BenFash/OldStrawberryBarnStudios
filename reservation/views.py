@@ -60,7 +60,7 @@ def ReservationView(request, pk):
             Guest Email: {reservation.guest_email}
             Guest Phone: {reservation.guest_phone}
             Number of Guests: {reservation.num_guests}
-            Number of Dogs: {reservation.dog}
+            Dog: {'Yes' if reservation.dog else 'No'}
             Vehicle: {'Yes' if reservation.vehicle else 'No'}
             Additional Information: {reservation.guest_info}
             '''
