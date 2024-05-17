@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Room, RoomImage, Reservation
 from .forms import ReservationForm
+import os
 
 
 # Create your views here.
@@ -67,7 +68,7 @@ def ReservationView(request, pk):
             Additional Information: {reservation.guest_info}
             '''
             from_email = reservation.guest_email
-            recipient_list = ['benfashan71@msn.com']  # Replace with your correct email
+            recipient_list = ['benfashan71@msn.com']
 
             # Send email notification to yourself
             send_mail(subject, message, from_email, recipient_list, fail_silently=False)

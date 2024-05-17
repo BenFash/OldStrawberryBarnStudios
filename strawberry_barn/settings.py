@@ -44,13 +44,13 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
-# Email Configuration
+# Sendemail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.example.com'
+EMAIL_HOST = 'smtp-mail.outlook.com'  # Change this if you're using another email provider
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = 'benfashan71@msn.com'
+EMAIL_HOST_PASSWORD = '12Gameboys12O'
 
 # Application definition
 

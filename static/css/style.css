@@ -182,6 +182,7 @@ footer a {
 }
 
 
+/* media queries */
 @media screen and (max-width: 767px) {
     img.logo {
         width: 2rem;
