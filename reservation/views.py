@@ -7,7 +7,6 @@ from .models import Room, RoomImage, Reservation
 from .forms import ReservationForm
 import os
 
-
 # Create your views here.
 def RoomsView(request):
     """
@@ -76,8 +75,8 @@ def ReservationView(request, pk):
             # Add a success message
             messages.success(request, f'Please expect contact from the owners within 3 working days regarding your enquiry about the availability of {room.room_name}.')
 
-            # Redirect to the room details page using pk
-            return redirect('room_detail', pk=room.pk)
+            # Redirect to the room details page
+            return HttpResponseRedirect(reverse('room_detail', args=[pk]))
     else:
         form = ReservationForm(initial={'room': room})
 
