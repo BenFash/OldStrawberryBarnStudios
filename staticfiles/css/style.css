@@ -9,9 +9,10 @@
     /* colors */
     --navfooter: #212529;
     --bgcolor1: #879A77;
-    --bgcolor2: #823200;
-    --bgcolor3: #827191;
-    --buttons: #f8f9fa;
+    --bgcolor2: #212529;
+    --bgcolor3: #c6c6c6;
+    --bgcolor4: white;
+    --buttons: #212529;
 
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -47,11 +48,17 @@ main {
     font-size: large;
 }
 
+/* ul li {
+    list-style: none;
+} */
+
 .active {
     color: white;
     font-weight: 700;
     border-bottom: 1px solid white;
 }
+
+
 
 /* Header  */
 
@@ -121,14 +128,61 @@ footer a {
 }
 
 /* rooms.html */
+.room-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
 .btn-rooms {
+    color: white;
     background-color: var(--buttons);
 }
 
-.btn-rooms:hover {
-    background-color: #e8e9eb;
+.btn-rooms:hover,
+.btn-rooms:active,
+.btn-rooms:focus {
+    color: black;
+    background-color: var(--bgcolor3);
 }
 
+.dog-card {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 6rem;
+}
+
+/* roomdetail.html */
+#roomdetailcarousel {
+    height: 80vh;
+    width: 95%;
+}
+
+.roomdetailimg {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    border: var(--border);
+}
+
+#detailscard {
+    font-size: x-large;
+}
+
+.btn-details {
+    font-size: x-large;
+    color: white;
+    background-color: var(--buttons);
+}
+
+.btn-details:hover {
+    color: black;
+    background-color: var(--bgcolor3);
+}
+
+
+/* media queries */
 @media screen and (max-width: 767px) {
     img.logo {
         width: 2rem;
@@ -145,6 +199,26 @@ footer a {
 
     .btn-rooms {
         margin: 10px 0;
+    }
+
+    #roomdetailcarousel {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .roomdetailimg {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+        border: none;
+    }
+
+    #detailscard {
+        font-size: large;
+    }
+
+    .btn-details {
+        font-size: large;
     }
 
     /* .homeimg {
