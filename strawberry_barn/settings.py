@@ -17,7 +17,7 @@ import dj_database_url
 if os.path.exists('env.py'):
     import env
 
-DEBUG = os.environ.get('DEBUG', False) 
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,9 +156,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Sendemail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Change this if you're using another email provider
+EMAIL_HOST = 'smtp.gmail.com.'  # Use your SMTP server
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = 'bfashantech@gmail.com'
+EMAIL_HOST_PASSWORD = 'sxzb mvak euog rglk'
+# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # Your email address
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # Your email password
+
