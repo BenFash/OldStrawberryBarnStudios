@@ -2,7 +2,7 @@ from django.core.mail import send_mail
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from .models import Room, RoomImage, Reservation
 from .forms import ReservationForm
 import os
@@ -51,31 +51,14 @@ def ReservationView(request, pk):
             reservation.room = room
             reservation.save()
 
-            # Email details
-            subject = f'New Reservation Enquiry for {room.room_name}'
-            message = f'''
-            Reservation Details
-            Room: {room.room_name}
-            Check-in Date: {reservation.check_in}
-            Check-out Date: {reservation.check_out}
-            Guest Name: {reservation.guest_name}
-            Guest Email: {reservation.guest_email}
-            Guest Phone: {reservation.guest_phone}
-            Number of Guests: {reservation.num_guests}
-            Dog: {'Yes' if reservation.dog else 'No'}
-            Vehicle: {'Yes' if reservation.vehicle else 'No'}
-            Additional Information: {reservation.guest_info}
-            '''
-            from_email = reservation.guest_email
-            recipient_list = ['benfashan71@msn.com']
-
-            # Send email notification to yourself
-            send_mail(subject, message, from_email, recipient_list, fail_silently=False)
-
             # Add a success message
             messages.success(request, f'Please expect contact from the owners within 3 working days regarding your enquiry about the availability of {room.room_name}.')
 
-            # Redirect to the room details page
+            # Respond with JSON if the request is an AJAX request
+            if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+                return JsonResponse({'redirect_url': reverse('room_detail', args=[pk])})
+            
+            # Fallback to normal redirect for non-AJAX requests
             return HttpResponseRedirect(reverse('room_detail', args=[pk]))
     else:
         form = ReservationForm(initial={'room': room})

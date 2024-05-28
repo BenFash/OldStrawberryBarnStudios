@@ -154,13 +154,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Sendemail
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com.'  # Use your SMTP server
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'bfashantech@gmail.com'
-EMAIL_HOST_PASSWORD = 'sxzb mvak euog rglk'
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # Your email address
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # Your email password
 
