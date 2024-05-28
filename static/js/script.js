@@ -1,7 +1,6 @@
 console.log('script.js loaded');
 
 (function () {
-    // Initialize EmailJS with your public key
     emailjs.init("tDN0tUMP56E9wc3Dc");
 })();
 
@@ -22,13 +21,22 @@ window.onload = function () {
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
                 xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        const response = JSON.parse(xhr.responseText);
-                        if (response.redirect_url) {
-                            // Redirect to the room detail page upon success
-                            window.location.href = response.redirect_url;
+                    if (xhr.readyState === 4) {
+                        console.log('Response received:', xhr.responseText); // Log the response text
+                        if (xhr.status === 200) {
+                            try {
+                                const response = JSON.parse(xhr.responseText);
+                                if (response.redirect_url) {
+                                    window.location.href = response.redirect_url;
+                                } else {
+                                    console.log('No redirect URL found in the response');
+                                }
+                            } catch (e) {
+                                console.error('Failed to parse JSON response:', e);
+                            }
                         } else {
-                            console.log('No redirect URL found in the response');
+                            console.error('Server responded with status:', xhr.status);
+                            console.error('Response text:', xhr.responseText);
                         }
                     }
                 };

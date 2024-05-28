@@ -1,8 +1,10 @@
 from django import forms
 from .models import Reservation
 from django.core.exceptions import ValidationError
+from phonenumber_field.formfields import PhoneNumberField
 
 class ReservationForm(forms.ModelForm):
+    guest_phone = PhoneNumberField(region="GB")
     class Meta:
         model = Reservation
         fields = ['guest_name', 'guest_email', 'guest_phone', 'check_in', 'check_out', 'num_guests', 'dog', 'vehicle', 'guest_info']
@@ -19,3 +21,5 @@ class ReservationForm(forms.ModelForm):
         if num_guests > 2:
             raise ValidationError('The number of guests cannot exceed 2.')
         return num_guests
+
+

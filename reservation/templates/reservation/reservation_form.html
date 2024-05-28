@@ -9,6 +9,8 @@
         <h1 class="text-center pb-2">Make a Reservation for {{ room.room_name }}</h1>
         {% csrf_token %}
         {{ form.media }}
+        <!-- Hidden fields to include Django variables -->
+        <input type="hidden" name="room_name" value="{{ room.room_name }}">
         {{ form.guest_name|as_crispy_field }}
         {{ form.guest_email|as_crispy_field }}
         {{ form.guest_phone|as_crispy_field }}
