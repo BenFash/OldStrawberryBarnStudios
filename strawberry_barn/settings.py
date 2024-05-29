@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'home',
     'reservation',
+    'areaguide',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
