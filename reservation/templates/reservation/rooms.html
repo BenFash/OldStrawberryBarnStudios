@@ -120,7 +120,6 @@
 <div class="container-fluid d-flex flex-row flex-wrap justify-content-center gap-5 mt-4 mb-5">
     {% for r in rooms %}
     <div class="card" style="width: 20rem;">
-        <!-- Changed the src attribute to access the room picture URL -->
         <img src="{{ r.room_pictures.url }}" class="img-fluid room-img" alt="{{ r.room_name }}">
         <div class="card-body">
             <h2 class="card-title">{{ r.room_name }}</h2>
