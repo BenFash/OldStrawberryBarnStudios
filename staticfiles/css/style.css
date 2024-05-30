@@ -17,6 +17,7 @@
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     --border: 5px solid #000;
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Generic */
@@ -24,6 +25,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -52,12 +54,16 @@ main {
     list-style: none;
 } */
 
+
 .active {
     color: white;
     font-weight: 700;
     border-bottom: 1px solid white;
 }
 
+.header-shadow {
+    text-shadow: var(--text-shadow);
+}
 
 
 /* Header  */
@@ -181,6 +187,49 @@ footer a {
     background-color: var(--bgcolor3);
 }
 
+/* areaguide.html */
+.areaguide-img-detail {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+#attractions {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/cheddar-gorge.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+#pubs {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/kings-head.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+#walks {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/reservoir.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+#food {}
+
+#transport {}
+
+#nearby {}
 
 /* media queries */
 @media screen and (max-width: 767px) {
@@ -221,8 +270,28 @@ footer a {
         font-size: large;
     }
 
-    /* .homeimg {
-        height: 80vh;
-        width: 100%;
-    } */
+    #attractions {
+        width: 90%;
+    }
+
+    #pubs {
+        width: 90%;
+    }
+
+    #walks {
+        width: 90%;
+    }
+
+    #food {
+        width: 90%;
+    }
+
+    #transport {
+        width: 90%;
+    }
+
+    #nearby {
+        width: 90%;
+    }
+
 }
