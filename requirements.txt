@@ -1,4 +1,6 @@
+aiosmtpd==1.4.6
 asgiref==3.8.1
+atpublic==4.1.0
 crispy-bootstrap5==2024.2
 dj-database-url==0.5.0
 Django==4.2.11

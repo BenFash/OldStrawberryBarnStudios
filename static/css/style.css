@@ -17,6 +17,10 @@
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     --border: 5px solid #000;
+
+    --header-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
 }
 
 /* Generic */
@@ -181,6 +185,28 @@ footer a {
     background-color: var(--bgcolor3);
 }
 
+/* areaguide.html */
+#attractions {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/cheddar-gorge.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.areaguide-img-detail {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.header-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Subtle shadow for better readability */
+}
 
 /* media queries */
 @media screen and (max-width: 767px) {
