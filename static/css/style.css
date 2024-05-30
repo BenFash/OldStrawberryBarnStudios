@@ -17,10 +17,7 @@
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     --border: 5px solid #000;
-
-    --header-shadow {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Generic */
@@ -60,6 +57,10 @@ main {
     color: white;
     font-weight: 700;
     border-bottom: 1px solid white;
+}
+
+.header-shadow {
+    text-shadow: var(--text-shadow);
 }
 
 
@@ -203,9 +204,14 @@ footer a {
     right: 10px;
 }
 
-.header-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* Subtle shadow for better readability */
+#pubs {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/kings-head.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
 }
 
 /* media queries */
