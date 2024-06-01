@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'home',
     'reservation',
     'areaguide',
+    'privacynotice'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
