@@ -164,12 +164,16 @@ footer a {
 
 /* roomdetail.html */
 #roomdetailcarousel {
-    height: 80vh;
+    height: 77vh;
     width: 95%;
 }
 
+.roomdetailcontainer {
+    height: 77vh;
+}
+
 .roomdetailimg {
-    height: 80vh;
+    height: 77vh;
     width: 100%;
     object-fit: cover;
     border: var(--border);
