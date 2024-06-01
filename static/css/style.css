@@ -65,6 +65,10 @@ li a {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
+.card-border {
+    border: var(--border);
+}
+
 /* Header  */
 
 header {
@@ -137,10 +141,6 @@ footer a {
     width: 100%;
     height: 20rem;
     object-fit: cover;
-}
-
-.card-border {
-    border: var(--border);
 }
 
 .btn-rooms {
@@ -265,6 +265,7 @@ footer a {
     height: 30vh;
     border-radius: 10px;
 }
+
 
 /* media queries */
 @media screen and (max-width: 767px) {
