@@ -126,7 +126,9 @@ footer a {
     height: 88vh;
 }
 
-.homedetailcontainer {}
+.homedetailcontainer {
+    height: 88vh;
+}
 
 .homeimg {
     width: 100%;
