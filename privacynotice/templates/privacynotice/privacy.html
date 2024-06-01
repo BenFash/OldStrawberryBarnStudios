@@ -1,1 +1,93 @@
-HEllo world
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Privacy Notice{% endblock %}
+
+{% block content %}
+<h1 class="header-shadow text-center mt-4 text-decoration-underline">Privacy Notice</h1>
+
+<div class="container mt-4 mb-5">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Data Collection</h5>
+            <p>We collect personal data through our reservation form.</p>
+            <ul>
+                <li>Name</li>
+                <li>Email Address</li>
+                <li>Phone Number</li>
+                <li>Check-in and Check-out Dates</li>
+                <li>Number of Guests</li>
+                <li>Vehicle Information</li>
+                <li>Additional Information (e.g., special requests)</li>
+            </ul>
+            <hr>
+
+            <h5 class="card-title">Data Usage</h5>
+            <p>We use the collected personal data to:</p>
+            <ul>
+                <li>Process your reservation requests.</li>
+                <li>Communicate with you regarding your reservation.</li>
+                <li>Improve our services and website.</li>
+            </ul>
+            <hr>
+
+            <h5 class="card-title">Legal Basis for Processing</h5>
+            <ul>
+                <li><strong>Consent:</strong> By providing your personal data through our reservation form, you consent
+                    to its processing for the purposes described in this privacy notice.</li>
+                <li><strong>Contract:</strong> Processing your data is necessary for the performance of the reservation
+                    contract.</li>
+            </ul>
+            <hr>
+
+            <h5 class="card-title">Data Retention</h5>
+            <p>We retain your personal data for as long as necessary to process your reservation and for a reasonable
+                period thereafter for record-keeping and legal purposes.</p>
+            <hr>
+
+            <h5 class="card-title">Data Protection</h5>
+            <p>We are committed to ensuring the security of your personal data. We have implemented appropriate
+                technical and organizational measures to protect your data from unauthorized access, alteration,
+                disclosure, or destruction. Our data is stored securely in a PostgreSQL database hosted by Neon.tech.
+            </p>
+            <hr>
+
+            <h5 class="card-title">User Rights</h5>
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can request access to your personal data.</li>
+                <li><strong>Rectification:</strong> You can request correction of any inaccurate or incomplete data.
+                </li>
+                <li><strong>Deletion:</strong> You can request deletion of your personal data, subject to legal or
+                    contractual obligations.</li>
+                <li><strong>Objection:</strong> You can object to the processing of your personal data under certain
+                    conditions.</li>
+                <li><strong>Portability:</strong> You can request a copy of your personal data in a structured, commonly
+                    used, and machine-readable format.</li>
+            </ul>
+            <p>To exercise these rights, please contact us at [THEOLDSTRAWBERRYBARNCHEDDAR@AOL.COM].</p>
+            <hr>
+
+            <h5 class="card-title">Cookies and Tracking</h5>
+            <p>We do not use cookies or other tracking technologies on our website.</p>
+            <hr>
+
+            <h5 class="card-title">Third-Party Services</h5>
+            <p>We do not share your personal data with any third parties.</p>
+            <hr>
+
+            <h5 class="card-title">Children’s Privacy</h5>
+            <p>Our website and services are not directed at children under the age of 16, and we do not knowingly
+                collect personal data from children. If we become aware that we have inadvertently collected personal
+                data from a child under the age of 16, we will delete such data promptly.</p>
+            <hr>
+
+            <h5 class="card-title">Changes to the Privacy Notice</h5>
+            <p>We may update this privacy notice from time to time to reflect changes in our practices or legal
+                requirements. We will notify you of any significant changes by posting the updated notice on our
+                website.</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

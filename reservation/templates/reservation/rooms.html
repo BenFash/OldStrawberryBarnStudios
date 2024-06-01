@@ -123,6 +123,7 @@
         <img src="{{ r.room_pictures.url }}" class="img-fluid room-img" alt="{{ r.room_name }}">
         <div class="card-body">
             <h2 class="card-title">{{ r.room_name }}</h2>
+            <hr>
             <p class="card-text">{{ r.card_description }}</p>
             <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-3">View Room</a>
             {% if r.room_name == 'Orchard View' or r.room_name == 'Meadow View' %}
