@@ -17,7 +17,6 @@
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     --border: 5px solid #000;
-    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Generic */
@@ -50,10 +49,6 @@ main {
     font-size: large;
 }
 
-/* ul li {
-    list-style: none;
-} */
-
 
 .active {
     color: white;
@@ -62,9 +57,16 @@ main {
 }
 
 .header-shadow {
-    text-shadow: var(--text-shadow);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
 
+.text-shadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+li a {
+    color: white;
+}
 
 /* Header  */
 
@@ -188,11 +190,17 @@ footer a {
 }
 
 /* areaguide.html */
+
 .areaguide-img-detail {
     color: white;
     position: absolute;
     bottom: 0;
     right: 10px;
+}
+
+.arealist {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 #attractions {
@@ -225,11 +233,35 @@ footer a {
     border-radius: 10px;
 }
 
-#food {}
+#food {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
 
-#transport {}
+#transport {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/travel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
 
-#nearby {}
+#nearby {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/glastonbury.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 10px;
+}
 
 /* media queries */
 @media screen and (max-width: 767px) {
