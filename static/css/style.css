@@ -60,12 +60,9 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
 
-.text-shadow {
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-}
-
 li a {
-    color: white;
+    color: var(--bgcolor4);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 /* Header  */
@@ -142,6 +139,10 @@ footer a {
     object-fit: cover;
 }
 
+.card-border {
+    border: var(--border);
+}
+
 .btn-rooms {
     color: white;
     background-color: var(--buttons);
@@ -194,13 +195,15 @@ footer a {
 .areaguide-img-detail {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: 10px;
 }
 
 .arealist {
     list-style-type: none;
     padding-left: 0;
+    text-decoration: none;
+    font-size: larger;
 }
 
 #attractions {
@@ -209,7 +212,7 @@ footer a {
     background-image: url("/static/images/areaguide/cheddar-gorge.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -219,7 +222,7 @@ footer a {
     background-image: url("/static/images/areaguide/kings-head.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -229,7 +232,7 @@ footer a {
     background-image: url("/static/images/areaguide/reservoir.jpeg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -239,7 +242,7 @@ footer a {
     background-image: url("/static/images/areaguide/food.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -249,7 +252,7 @@ footer a {
     background-image: url("/static/images/areaguide/travel.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -259,7 +262,7 @@ footer a {
     background-image: url("/static/images/areaguide/glastonbury.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
