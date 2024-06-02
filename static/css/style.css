@@ -168,17 +168,17 @@ footer a {
 
 /* roomdetail.html */
 #roomdetailcarousel {
-    height: 77vh;
+    height: 70vh;
     width: 95%;
 }
 
 .roomdetailcontainer {
-    height: 77vh;
+    height: 70vh;
     border: var(--border);
 }
 
 .roomdetailimg {
-    height: 77vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
@@ -278,7 +278,7 @@ footer a {
 
 #aboutus-img {
     width: 50vw;
-    height: 100%;
+    height: 70vh;
     object-fit: contain;
     border: var(--border);
 }
