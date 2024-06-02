@@ -274,6 +274,14 @@ footer a {
     border-radius: 10px;
 }
 
+/* aboutus.html */
+
+#aboutus-img {
+    width: 50vw;
+    height: 100%;
+    object-fit: contain;
+    border: var(--border);
+}
 
 /* media queries */
 @media screen and (max-width: 767px) {
