@@ -17,7 +17,6 @@
     /* Utils */
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     --border: 5px solid #000;
-    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Generic */
@@ -50,10 +49,6 @@ main {
     font-size: large;
 }
 
-/* ul li {
-    list-style: none;
-} */
-
 
 .active {
     color: white;
@@ -62,9 +57,17 @@ main {
 }
 
 .header-shadow {
-    text-shadow: var(--text-shadow);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
 
+li a {
+    color: var(--bgcolor4);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.card-border {
+    border: var(--border);
+}
 
 /* Header  */
 
@@ -120,12 +123,16 @@ footer a {
 
 /* home.html */
 #homecarousel {
-    height: 90vh;
+    height: 88vh;
+}
+
+.homedetailcontainer {
+    height: 88vh;
 }
 
 .homeimg {
     width: 100%;
-    height: 90vh;
+    height: 88vh;
     object-fit: cover;
 }
 
@@ -161,15 +168,19 @@ footer a {
 
 /* roomdetail.html */
 #roomdetailcarousel {
-    height: 80vh;
+    height: 77vh;
     width: 95%;
 }
 
+.roomdetailcontainer {
+    height: 77vh;
+    border: var(--border);
+}
+
 .roomdetailimg {
-    height: 80vh;
+    height: 77vh;
     width: 100%;
     object-fit: cover;
-    border: var(--border);
 }
 
 #detailscard {
@@ -188,11 +199,19 @@ footer a {
 }
 
 /* areaguide.html */
+
 .areaguide-img-detail {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: 10px;
+}
+
+.arealist {
+    list-style-type: none;
+    padding-left: 0;
+    text-decoration: none;
+    font-size: larger;
 }
 
 #attractions {
@@ -201,7 +220,7 @@ footer a {
     background-image: url("/static/images/areaguide/cheddar-gorge.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -211,7 +230,7 @@ footer a {
     background-image: url("/static/images/areaguide/kings-head.jpg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -221,15 +240,48 @@ footer a {
     background-image: url("/static/images/areaguide/reservoir.jpeg");
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
 }
 
-#food {}
+#food {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 10px;
+}
 
-#transport {}
+#transport {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/travel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 10px;
+}
 
-#nearby {}
+#nearby {
+    position: relative;
+    border: var(--border);
+    background-image: url("/static/images/areaguide/glastonbury.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+/* aboutus.html */
+
+#aboutus-img {
+    width: 50vw;
+    height: 100%;
+    object-fit: contain;
+    border: var(--border);
+}
 
 /* media queries */
 @media screen and (max-width: 767px) {
@@ -250,17 +302,19 @@ footer a {
         margin: 10px 0;
     }
 
-    #roomdetailcarousel {
-        height: 80vh;
-        width: 100%;
+
+    .roomdetailcontainer {
+        border: none;
     }
 
     .roomdetailimg {
-        height: 80vh;
         width: 100%;
-        object-fit: cover;
-        border: none;
     }
+
+    #roomdetailcarousel {
+        width: 100%;
+    }
+
 
     #detailscard {
         font-size: large;
