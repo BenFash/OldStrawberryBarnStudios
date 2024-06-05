@@ -276,11 +276,20 @@ footer a {
 
 /* aboutus.html */
 
-#aboutus-img {
-    width: 50vw;
+#aboutus-container {
+    width: 100%;
+    max-width: 95%;
+    margin: auto;
     height: 70vh;
-    object-fit: contain;
     border: var(--border);
+    overflow: hidden;
+}
+
+/* Styling for the about us image */
+#aboutus-img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* media queries */
