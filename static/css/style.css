@@ -308,6 +308,13 @@ footer a {
     line-height: 1;
 }
 
+#googlemap {
+    border: var(--border);
+    border-radius: 5px;
+    height: 20rem;
+    width: 64rem;
+}
+
 /* media queries */
 @media screen and (max-width: 767px) {
     img.logo {
@@ -391,6 +398,11 @@ footer a {
         padding: 5px 0px;
     }
 
+    #googlemap {
+        width: 100%;
+        border: none;
+    }
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -409,5 +421,10 @@ footer a {
         border: none;
         border-radius: 0px;
         border: #000;
+    }
+
+    #googlemap {
+        width: 100%;
+
     }
 }
