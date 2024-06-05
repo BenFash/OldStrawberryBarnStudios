@@ -285,16 +285,20 @@ footer a {
     overflow: hidden;
 }
 
-/* Styling for the about us image */
 #aboutus-img {
     height: 70vh;
     width: 100%;
     object-fit: cover;
 }
 
+#message-container {
+    border: var(--border);
+}
+
 #contact-container {
     border: var(--border);
     background-color: var(--bgcolor2);
+    line-height: 1;
 }
 
 /* media queries */
