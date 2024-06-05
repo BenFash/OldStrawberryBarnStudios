@@ -397,4 +397,17 @@ footer a {
     #detailscard {
         width: 100%;
     }
+
+    #aboutus-img {
+        margin-top: 30px;
+        width: 100%;
+        border: none;
+    }
+
+    #message-container {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        border: #000;
+    }
 }
