@@ -184,6 +184,7 @@ footer a {
 }
 
 #detailscard {
+    width: 40rem;
     font-size: x-large;
 }
 
@@ -390,4 +391,10 @@ footer a {
         padding: 5px 0px;
     }
 
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    #detailscard {
+        width: 100%;
+    }
 }
