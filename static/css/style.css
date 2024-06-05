@@ -276,26 +276,32 @@ footer a {
 
 /* aboutus.html */
 
-#aboutus-container {
+/* #aboutus-container {
     width: 100%;
     max-width: 95%;
     margin: auto;
     height: 70vh;
     border: var(--border);
     overflow: hidden;
-}
+} */
 
 #aboutus-img {
+    width: 95%;
+    /* max-width: 95%; */
+    /* margin: auto; */
     height: 70vh;
-    width: 100%;
+    border: var(--border);
+    overflow: hidden;
     object-fit: cover;
 }
 
 #message-container {
+    width: 64rem;
     border: var(--border);
 }
 
 #contact-container {
+    width: 32rem;
     border: var(--border);
     background-color: var(--bgcolor2);
     line-height: 1;
@@ -364,6 +370,24 @@ footer a {
 
     #nearby {
         width: 90%;
+    }
+
+    #aboutus-img {
+        margin-top: 20px;
+        width: 100%;
+        border: none;
+    }
+
+    #message-container {
+        width: 100%;
+        border: none;
+    }
+
+    #contact-container {
+        border: none;
+        width: 100%;
+        height: auto;
+        padding: 5px 0px;
     }
 
 }
