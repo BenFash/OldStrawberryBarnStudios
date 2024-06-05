@@ -292,6 +292,11 @@ footer a {
     object-fit: cover;
 }
 
+#contact-container {
+    border: var(--border);
+    background-color: var(--bgcolor2);
+}
+
 /* media queries */
 @media screen and (max-width: 767px) {
     img.logo {
