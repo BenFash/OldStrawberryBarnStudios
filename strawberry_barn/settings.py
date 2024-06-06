@@ -153,5 +153,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Enforce HTTPS redirection
-SECURE_SSL_REDIRECT = True

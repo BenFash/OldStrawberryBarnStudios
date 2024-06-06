@@ -6,15 +6,15 @@
 {% block content %}
 
 
-<div class="row mt-0 my-lg-5">
+<div class="row mt-0 my-lg-4">
     <!-- image container -->
     <div id="aboutus-img-col" class="col-12 col-lg-6 d-flex justify-content-center">
         <img id="aboutus-img" src="{% static 'images/exterior/aboutus.jpeg' %}"
             alt="Exterior photo of attached owners cottage" class="aboutus-img">
     </div>
     <!-- text containers -->
-    <div class="col-12 col-lg-6 px-1">
-        <div id="message-container" class="card px-2">
+    <div class="col-12 col-lg-6">
+        <div id="message-container" class="card pt-1 px-2">
             <h1>About us</h1>
             <hr>
             <p>We, Nick and Kerry, are delighted to invite you to our charming collection
@@ -35,7 +35,6 @@
             <p>Warm regards,</p>
 
             <p>Nick and Kerry</p>
-
         </div>
         <div id="contact-container" class="container my-lg-3 pt-2 text-white">
             <p class="text-center">The Old Strawberry Barn Studios</p>
@@ -44,6 +43,10 @@
             <p class="text-center">Tel: 07977503438</p>
             <p class="text-center">Email: theoldstrawberrybarncheddar@aol.com</p>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center mb-4">
         <gmp-map id="googlemap" center="51.28588104248047,-2.7865467071533203" zoom="17" map-id="DEMO_MAP_ID">
             <gmp-advanced-marker position="51.28588104248047,-2.7865467071533203" title="My location">
             </gmp-advanced-marker>

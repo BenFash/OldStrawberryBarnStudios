@@ -291,7 +291,7 @@ footer a {
 }
 
 #message-container {
-    width: 50rem;
+    width: 57rem;
     border: var(--border);
 }
 
@@ -306,7 +306,8 @@ footer a {
     border: var(--border);
     border-radius: 5px;
     height: 20rem;
-    width: 50rem;
+    width: 95vw;
+    margin: 0 auto;
 }
 
 /* media queries */
