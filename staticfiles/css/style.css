@@ -123,15 +123,17 @@ footer a {
 
 /* home.html */
 #homecarousel {
-    height: 78vh;
+    height: 88vh;
 }
 
 .homedetailcontainer {
-    height: 78vh;
+    height: 88vh;
 }
 
 .homeimg {
-    height: 78vh;
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
 }
 
 #introarea {
