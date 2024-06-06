@@ -147,6 +147,10 @@ footer a {
     object-fit: cover;
 }
 
+.card-text {
+    height: 13rem;
+}
+
 .btn-rooms {
     color: white;
     background-color: var(--buttons);
