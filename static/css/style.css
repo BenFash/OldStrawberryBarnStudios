@@ -193,7 +193,7 @@ footer a {
 }
 
 .btn-details {
-    font-size: x-large;
+    font-size: large;
     color: white;
     background-color: var(--buttons);
 }
@@ -312,6 +312,8 @@ footer a {
 
 /* media queries */
 @media screen and (max-width: 767px) {
+    /* base.html */
+
     img.logo {
         width: 2rem;
         height: 2rem;
@@ -324,6 +326,22 @@ footer a {
     .footer-links {
         font-size: 13px;
     }
+
+    /* index.html */
+
+    #homecarousel {
+        height: 78vh;
+    }
+
+    .homedetailcontainer {
+        height: 78vh;
+    }
+
+    .homeimg {
+        height: 78vh;
+    }
+
+    /* roomdetails.html */
 
     .btn-rooms {
         margin: 10px 0;
