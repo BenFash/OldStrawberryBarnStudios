@@ -291,12 +291,12 @@ footer a {
 }
 
 #message-container {
-    width: 32rem;
+    width: 43rem;
     border: var(--border);
 }
 
 #contact-container {
-    width: 43rem;
+    width: 32rem;
     border: var(--border);
     background-color: var(--bgcolor2);
     line-height: 1;
