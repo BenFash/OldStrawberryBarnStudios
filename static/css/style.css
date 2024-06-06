@@ -296,7 +296,7 @@ footer a {
 }
 
 #contact-container {
-    width: 32rem;
+    width: 43rem;
     border: var(--border);
     background-color: var(--bgcolor2);
     line-height: 1;
@@ -306,7 +306,7 @@ footer a {
     border: var(--border);
     border-radius: 5px;
     height: 20rem;
-    width: 32rem;
+    width: 43rem;
 }
 
 /* media queries */

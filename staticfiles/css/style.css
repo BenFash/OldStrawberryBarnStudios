@@ -189,7 +189,7 @@ footer a {
 
 #detailscard {
     width: 40rem;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .btn-details {
@@ -291,12 +291,12 @@ footer a {
 }
 
 #message-container {
-    width: 64rem;
+    width: 32rem;
     border: var(--border);
 }
 
 #contact-container {
-    width: 32rem;
+    width: 43rem;
     border: var(--border);
     background-color: var(--bgcolor2);
     line-height: 1;
@@ -306,7 +306,7 @@ footer a {
     border: var(--border);
     border-radius: 5px;
     height: 20rem;
-    width: 64rem;
+    width: 43rem;
 }
 
 /* media queries */
