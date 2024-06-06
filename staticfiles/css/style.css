@@ -147,6 +147,10 @@ footer a {
     object-fit: cover;
 }
 
+.card-text {
+    height: 13rem;
+}
+
 .btn-rooms {
     color: white;
     background-color: var(--buttons);
@@ -168,22 +172,23 @@ footer a {
 
 /* roomdetail.html */
 #roomdetailcarousel {
-    height: 77vh;
+    height: 70vh;
     width: 95%;
 }
 
 .roomdetailcontainer {
-    height: 77vh;
+    height: 70vh;
     border: var(--border);
 }
 
 .roomdetailimg {
-    height: 77vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
 
 #detailscard {
+    width: 40rem;
     font-size: x-large;
 }
 
@@ -276,11 +281,32 @@ footer a {
 
 /* aboutus.html */
 
+
 #aboutus-img {
-    width: 50vw;
-    height: 100%;
-    object-fit: contain;
+    width: 95%;
+    height: 70vh;
     border: var(--border);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#message-container {
+    width: 64rem;
+    border: var(--border);
+}
+
+#contact-container {
+    width: 32rem;
+    border: var(--border);
+    background-color: var(--bgcolor2);
+    line-height: 1;
+}
+
+#googlemap {
+    border: var(--border);
+    border-radius: 5px;
+    height: 20rem;
+    width: 64rem;
 }
 
 /* media queries */
@@ -348,4 +374,48 @@ footer a {
         width: 90%;
     }
 
+    #aboutus-img {
+        width: 100%;
+        border: none;
+    }
+
+    #message-container {
+        width: 100%;
+        border: none;
+    }
+
+    #contact-container {
+        border: none;
+        width: 100%;
+        height: auto;
+        padding: 5px 0px;
+    }
+
+    #googlemap {
+        width: 100%;
+        border: none;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    #detailscard {
+        width: 100%;
+    }
+
+    #aboutus-img {
+        width: 100%;
+        border: none;
+    }
+
+    #message-container {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        border: #000;
+    }
+
+    #googlemap {
+        width: 100%;
+    }
 }
