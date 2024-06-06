@@ -291,7 +291,7 @@ footer a {
 }
 
 #message-container {
-    width: 50rem;
+    width: 55rem;
     border: var(--border);
 }
 
@@ -339,15 +339,6 @@ footer a {
 
     #roomdetailcarousel {
         width: 100%;
-    }
-
-
-    #detailscard {
-        font-size: large;
-    }
-
-    .btn-details {
-        font-size: large;
     }
 
     #attractions {
