@@ -277,19 +277,9 @@ footer a {
 
 /* aboutus.html */
 
-/* #aboutus-container {
-    width: 100%;
-    max-width: 95%;
-    margin: auto;
-    height: 70vh;
-    border: var(--border);
-    overflow: hidden;
-} */
 
 #aboutus-img {
     width: 95%;
-    /* max-width: 95%; */
-    /* margin: auto; */
     height: 70vh;
     border: var(--border);
     overflow: hidden;
@@ -381,7 +371,6 @@ footer a {
     }
 
     #aboutus-img {
-        margin-top: 20px;
         width: 100%;
         border: none;
     }
@@ -411,7 +400,6 @@ footer a {
     }
 
     #aboutus-img {
-        margin-top: 30px;
         width: 100%;
         border: none;
     }
@@ -425,6 +413,5 @@ footer a {
 
     #googlemap {
         width: 100%;
-
     }
 }
