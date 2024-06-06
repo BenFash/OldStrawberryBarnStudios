@@ -4,7 +4,7 @@
 {% block title %}Rooms{% endblock %}
 
 {% block content %}
-<h1 class="header-shadow text-center mt-4 text-decoration-underline">Rooms</h1>
+<h1 class="header-shadow text-center mt-4 text-decoration-underline">Studios</h1>
 <!-- buttons area -->
 <div id="buttonsarea">
     <div class="row justify-content-between text-center mt-3">
@@ -125,7 +125,7 @@
             <h2 class="card-title">{{ r.room_name }}</h2>
             <hr>
             <p class="card-text">{{ r.card_description }}</p>
-            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-3">View Room</a>
+            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-3">View Studio</a>
             {% if r.room_name == 'Orchard View' or r.room_name == 'Meadow View' %}
             <span><img src="/static/images/dog.jpg" alt="dog friendly logo" class="dog-card"></span>
             {% endif %}
