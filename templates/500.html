@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Internal Server Error{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-1">500</h1>
+    <p class="lead">Oops! Something went wrong.</p>
+    <p class="lead">The server encountered an internal error and was unable to complete your request.</p>
+    <a href="{% url 'home' %}" class="btn btn-details">Go to Home</a>
+</div>
+{% endblock %}

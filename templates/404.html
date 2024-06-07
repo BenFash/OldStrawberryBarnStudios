@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-1">404</h1>
+    <p class="lead">Oops! Page not found.</p>
+    <p class="lead">The requested URL was not found on this server.</p>
+    <a href="{% url 'home' %}" class="btn btn-details">Go to Home</a>
+</div>
+{% endblock %}
