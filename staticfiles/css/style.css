@@ -281,7 +281,6 @@ footer a {
 
 /* aboutus.html */
 
-
 #aboutus-img {
     width: 95%;
     height: 70vh;
@@ -291,7 +290,7 @@ footer a {
 }
 
 #message-container {
-    width: 57rem;
+    width: 95%;
     border: var(--border);
 }
 
