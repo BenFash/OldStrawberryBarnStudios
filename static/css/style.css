@@ -189,7 +189,6 @@ footer a {
 
 #detailscard {
     width: 40rem;
-    font-size: larger;
 }
 
 .btn-details {
@@ -358,33 +357,36 @@ footer a {
         width: 100%;
     }
 
-    #detailscard {
-        font-size: normal;
-    }
 
     /* Areaguide.html */
 
     #attractions {
+        height: 35vh;
         width: 90%;
     }
 
     #pubs {
+        height: 35vh;
         width: 90%;
     }
 
     #walks {
+        height: 35vh;
         width: 90%;
     }
 
     #food {
+        height: 35vh;
         width: 90%;
     }
 
     #transport {
+        height: 35vh;
         width: 90%;
     }
 
     #nearby {
+        height: 35vh;
         width: 90%;
     }
 
