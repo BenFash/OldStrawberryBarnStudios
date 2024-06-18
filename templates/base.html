@@ -55,7 +55,7 @@
                                 href="{% url 'home' %}">Home</a>
                         </li>
                         <li class=" nav-item">
-                            <a class="nav-link {% if url_name == 'studios' %}active{% endif %}"
+                            <a class="nav-link {% if url_name == 'studios' or url_name == 'room_detail' %}active{% endif %}"
                                 href="{% url 'studios' %}">Studios</a>
                         </li>
                         <li class="nav-item">
