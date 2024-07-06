@@ -21,9 +21,8 @@
         </div>
         <div class="col-12 col-md-4">
             <button class="btn btn-rooms w-50" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample3" aria-expanded="false"
-                aria-controls="multiCollapseExample3">House
-                Rules</button>
+                data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Good
+                To Know</button>
         </div>
     </div>
 
@@ -100,7 +99,7 @@
                 <div class="card card-body">
                     <div class="row">
                         <div class="col-12">
-                            <i class="fa-solid fa-house"></i><span class="p-1 underline">House Rules</span>
+                            <i class="fa-solid fa-house"></i><span class="p-1 underline">Good To Know</span>
                             <ul>
                                 <li>No smoking in studio</li>
                                 <li>Well behaved dogs</li>
@@ -125,7 +124,7 @@
             <h2 class="card-title">{{ r.room_name }}</h2>
             <hr>
             <p class="card-text">{{ r.card_description }}</p>
-            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-3">View Studio</a>
+            <a href="{% url 'room_detail' pk=r.pk %}" class="btn btn-rooms mt-5">View Studio</a>
             {% if r.room_name == 'Orchard View' or r.room_name == 'Meadow View' %}
             <span><img src="/static/images/dog.jpg" alt="dog friendly logo" class="dog-card"></span>
             {% endif %}
