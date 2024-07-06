@@ -49,3 +49,29 @@ window.onload = function () {
             });
     });
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const arrivalDateField = document.getElementById('id_arrival_date');
+    const numberOfNightsField = document.getElementById('id_number_of_nights');
+
+    arrivalDateField.addEventListener('change', function () {
+        const date = new Date(arrivalDateField.value);
+        const day = date.getUTCDay();
+
+        let options = [];
+
+        if (day === 1) { // Monday
+            options = [4, 7];
+        } else if (day === 5) { // Friday
+            options = [2, 3, 7];
+        }
+
+        numberOfNightsField.innerHTML = '';
+        options.forEach(function (option) {
+            const opt = document.createElement('option');
+            opt.value = option;
+            opt.innerHTML = option;
+            numberOfNightsField.appendChild(opt);
+        });
+    });
+});
