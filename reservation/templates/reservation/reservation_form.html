@@ -6,7 +6,13 @@
 {% load crispy_forms_tags %}
 <div class="container my-2">
     <form method="POST" id="res-form" class="p-2 form">
-        <h1 class="text-center pb-2">Make a Reservation for {{ room.room_name }}</h1>
+        <h1 class="header-shadow text-center pb-2">Make a Reservation for {{ room.room_name }}</h1>
+        <div class="alert alert-info card-border">
+            <strong>Please Note:</strong> We only allow arrivals on Fridays and Mondays.
+            For arrivals on Fridays, you can book 2, 3, or 7-night stays.
+            For arrivals on Mondays, you can book 4 or 7-night stays.
+            <strong>The form will not submit otherwise.</strong>
+        </div>
         {% csrf_token %}
         {{ form.media }}
         <!-- Hidden fields to include Django variables -->
