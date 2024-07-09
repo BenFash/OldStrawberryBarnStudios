@@ -261,7 +261,7 @@ footer a {
 #transport {
     position: relative;
     border: var(--border);
-    background-image: url("/static/images/areaguide/travel.jpg");
+    background-image: url("/static/images/areaguide/takeaway.jpg");
     background-size: cover;
     background-position: center;
     height: 30vh;
