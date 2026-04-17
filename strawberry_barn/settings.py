@@ -38,6 +38,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'www.theoldstrawberrybarn.com',
     'theoldstrawberrybarn.com',
+    '*',
 ]
 
 
